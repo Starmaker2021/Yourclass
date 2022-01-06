@@ -1,0 +1,65 @@
+.rating{
+  font-size: 0;
+  line-height: 24px;
+  .rate{
+    height: 24px;
+    padding-left: 120px;
+    background: url("../../../styles/ic_rating_s.png") no-repeat;
+    background-size: 120px auto;
+    font-size: 16px;
+    line-height: 24px;
+    text-indent: 8px;
+    &.rate-10{
+      background-position: 0 0;
+    }
+    &.rate-9{
+      background-position: 0 -24px;
+    }
+    &.rate-8{
+      background-position: 0 -48px;
+    }
+    &.rate-7{
+      background-position: 0 -72px;
+    }
+    &.rate-6{
+      background-position: 0 -96px;
+    }
+    &.rate-5{
+      background-position: 0 -120px;
+    }
+    &.rate-4{
+      background-position: 0 -144px;
+    }
+    &.rate-3{
+      background-position: 0 -168px;
+    }
+    &.rate-2{
+      background-position: 0 -192px;
+    }
+    &.rate-1{
+      background-position: 0 -216px;
+    }
+    &.rate-0{
+      background-position: 0 -240px;
+    }
+  }
+  a{
+    display: inline-block;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    background: url("../../../styles/star_hollow_hover.png") no-repeat center;
+    background-size: contain;
+    &.active{
+      background-image: url("../../../styles/star_onmouseover.png");
+    }
+  }
+  span{
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 8px;
+  }
+  a,span{
+    vertical-align: middle;
+  }
+}

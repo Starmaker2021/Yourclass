@@ -1,0 +1,171 @@
+.upload-course{
+  .button-group{
+    text-align: center;
+    margin:16px 0;
+    .ant-btn{
+      width: 160px;
+      margin:0 18px;
+    }
+  }
+  .ant-upload.ant-upload-select-picture-card{
+    width: auto;
+    min-width: 104px;
+    img{
+      height: 104px;
+      width: auto!important;
+    }
+  }
+  .ant-tabs-nav-list{
+    width: 100%;
+    border:1px solid #999;
+    .ant-tabs-tab{
+      width: 33.33%;
+      &:nth-child(1),&:nth-child(2){
+        &.ant-tabs-tab-active{
+          position: relative;
+          &::after{
+            position: absolute;
+            right: -48px;
+            content:'';
+            width: 0;
+            height: 0;
+            border-top: 24px solid transparent;
+            border-left: 48px solid #1DA57A;
+            border-bottom: 24px solid transparent;
+          }
+        }
+      }
+      &:nth-child(2),&:nth-child(3){
+        &.ant-tabs-tab-active{
+          position: relative;
+          &::before{
+            position: absolute;
+            left: 0;
+            content:'';
+            width: 0;
+            height: 0;
+            border-top: 24px solid transparent;
+            border-left: 48px solid #fff;
+            border-bottom: 24px solid transparent;
+          }
+        }
+      }
+      &.ant-tabs-tab-active{
+        background-color: #1DA57A;
+        .ant-tabs-tab-btn{
+          color:#fff;
+        }
+      }
+
+    }
+    .ant-tabs-ink-bar{
+      display: none;
+    }
+
+  }
+  .basic-form{
+    display: flex;
+    justify-content: space-between;
+    .form-left,.form-right{
+      width: 400px;
+      label{
+        width: 140px;
+      }
+      .ant-select,input,.ant-input-number{
+        width: 240px;
+      }
+    }
+  }
+  .course-details{
+    label{
+      width: 140px;
+    }
+    .ant-select,input,.ant-input-number{
+      width: 240px;
+    }
+    textarea{
+      width: 240px!important;
+      height: 128px;
+      resize: none;
+    }
+  }
+  .arrange-course{
+    .course-manage{
+      display: flex;
+      justify-content: space-between;
+    }
+    .course-root,.lecture-detail{
+      width: 480px;
+      min-height: 420px;
+      .ant-card-body{
+        height: 100%;
+      }
+    }
+    .lecture-detail{
+      width: 560px;
+    }
+    .course-root{
+      .ant-input{
+        width: 300px;
+        border:0;
+        background-color: transparent;
+      }
+      .ant-input:focus{
+        border:0;
+      }
+      .ant-collapse-header{
+        padding:4px 16px 4px 40px;
+        line-height: 32px;
+        .anticon{
+          padding-top:12px;
+        }
+      }
+      .ant-collapse-extra{
+        svg{
+          margin:0 4px;
+        }
+      }
+      .ant-collapse-content-box{
+        padding: 8px 8px 8px 40px;
+      }
+      .lecture-item{
+        border:1px solid #d9d9d9;
+        height: 32px;
+        line-height: 32px;
+        text-align: right;
+        padding-right: 8px;
+        padding-left: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        &.active{
+          background-color: #1DA57A;
+          color:#fff;
+        }
+        &:last-child{
+          margin:0;
+        }
+        svg{
+          margin:0 4px;
+        }
+      }
+    }
+    .lecture-detail{
+      label{
+        width: 140px;
+      }
+      .ant-form-item{
+        margin-bottom:8px;
+      }
+      .ant-divider{
+        margin:16px 0;
+      }
+      textarea{
+        width: 100%!important;
+        height: 128px;
+        resize: none;
+      }
+    }
+  }
+}

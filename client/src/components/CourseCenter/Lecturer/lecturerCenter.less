@@ -1,0 +1,73 @@
+.lecturer-center{
+  display:flex;
+  height: 100%;
+  flex-direction: column;
+  .header{
+    height: 60px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    .shortcut{
+      width: 260px;
+      height: 50px;
+      border-right: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      .btn{
+        padding: 8px 25px;
+        cursor: pointer;
+        svg{
+          margin-left: 8px;
+        }
+      }
+    }
+    .description{
+      padding-left: 24px;
+      h1{
+        margin:0;
+      }
+    }
+  }
+  .ant-tabs{
+    flex:1;
+    .ant-tabs-nav{
+      width: 260px;
+      .ant-tabs-nav-list{
+        margin:210px 24px 24px;
+        border:1px solid #f0f0f0;
+        border-radius: 4px;
+        &:last-child{
+          border-bottom: 0;
+        }
+        .ant-tabs-tab{
+          border-bottom: 1px solid #f0f0f0;
+          height: 48px;
+          &.ant-tabs-tab-active{
+            background-color: #1DA57A;
+            border-radius: 4px;
+            .ant-tabs-tab-btn{
+              color:#fff;
+            }
+          }
+        }
+        .ant-tabs-ink-bar{
+          visibility: hidden;
+        }
+      }
+    }
+    .ant-tabs-tabpane{
+      padding-left: 0!important;
+      overflow: auto;
+      position: relative;
+    }
+    .ant-tabs-content{
+      height: 100%;
+    }
+  }
+  .cover{
+    width: 260px;
+    text-align: center;
+    position: absolute;
+    top:154px;
+  }
+}
